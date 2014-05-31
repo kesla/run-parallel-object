@@ -1,0 +1,1 @@
+require('run-object-basis/test/abstract')(require('./run-parallel-object'))
