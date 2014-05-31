@@ -1,15 +1,15 @@
-# run-series-object[![build status](https://secure.travis-ci.org/kesla/run-series-object.png)](http://travis-ci.org/kesla/run-series-object)
+# run-parallel-object[![build status](https://secure.travis-ci.org/kesla/run-parallel-object.png)](http://travis-ci.org/kesla/run-parallel-object)
 
 Resolve functions in an object to values
 
-[![NPM](https://nodei.co/npm/run-series-object.png?downloads&stars)](https://nodei.co/npm/run-series-object/)
+[![NPM](https://nodei.co/npm/run-parallel-object.png?downloads&stars)](https://nodei.co/npm/run-parallel-object/)
 
-[![NPM](https://nodei.co/npm-dl/run-series-object.png)](https://nodei.co/npm/run-series-object/)
+[![NPM](https://nodei.co/npm-dl/run-parallel-object.png)](https://nodei.co/npm/run-parallel-object/)
 
 ## Installation
 
 ```
-npm install run-series-object
+npm install run-parallel-object
 ```
 
 ## Example
@@ -17,7 +17,7 @@ npm install run-series-object
 ### Input
 
 ```javascript
-var run = require('./run-series-object')
+var run = require('./run-parallel-object')
   , obj = {
         beep: {
             boop: {
