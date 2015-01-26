@@ -1,4 +1,4 @@
-# run-parallel-object[![build status](https://secure.travis-ci.org/kesla/run-parallel-object.png)](http://travis-ci.org/kesla/run-parallel-object)
+# run-parallel-object[![build status](https://secure.travis-ci.org/kesla/run-parallel-object.svg)](http://travis-ci.org/kesla/run-parallel-object)
 
 Resolve functions in an object to values
 
@@ -18,6 +18,7 @@ npm install run-parallel-object
 
 ```javascript
 var run = require('./run-parallel-object')
+  , stream = require('stream').PassThrough({ objectMode: true })
   , obj = {
         beep: {
             boop: {
@@ -26,7 +27,11 @@ var run = require('./run-parallel-object')
           , bong: 'king kong'
         }
       , hello: function (done) { done(null, 'world') }
+      , stream: stream
     }
+
+stream.write({ key: 'this is from a stream' })
+stream.end()
 
 run(obj, function (err, result) {
   console.log(result)
@@ -37,7 +42,8 @@ run(obj, function (err, result) {
 
 ```
 { beep: { bong: 'king kong', boop: { foo: 'bar' } },
-  hello: 'world' }
+  hello: 'world',
+  stream: [ { key: 'this is from a stream' } ] }
 ```
 
 ## Licence

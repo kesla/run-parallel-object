@@ -18,7 +18,7 @@
     "tape": "^2.13.1"
   },
   "dependencies": {
-    "run-object-basis": "^1.0.0",
+    "run-object-basis": "^2.0.0",
     "run-parallel": "^1.0.0"
   },
   "repository": {
