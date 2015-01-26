@@ -1,6 +1,6 @@
 {
   "name": "run-parallel-object",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Resolve functions in an object to values",
   "main": "run-parallel-object.js",
   "scripts": {
